@@ -47,15 +47,18 @@ a:hover {
 }
 
 .comamonda{
-    display: none;
+    display: flex;
 }
 
 
 
 #burger {
-    display: block;
+    display: none;
 }
 
+.mobile-menu{
+    display: none;
+}
 .nav-mobile-menu {
     visibility: hidden;
     display: flex;
@@ -455,5 +458,14 @@ a:hover {
     }
     .iconspie .fa-telegram{
         margin: 0;
+    }
+    .comamonda{
+        display: none;
+    }
+    #burger {
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
     }
 }
