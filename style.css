@@ -413,19 +413,45 @@ a:hover {
         font-size: 36px;
         font-weight: 400;
     }
+    .boxmusica, .fondo, .contenedormusica{
+        height: 1000px;
+    }
     .contenedormusica iframe{
         width: 296px;
-        height: 190px;
+        height: 200px;
     }
     .nosotros{
         flex-direction: column;
         align-items: center;
+    }
+    .nosotros > img{
+        width: 80%;
+    }
+    .venimos{
+        width: 85%;
+    }
+    .nosotros .venimos h2 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .nosotros .venimos p {
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+    }
+    .invitados h2{
+        font-size: 36px;
+        margin: 7.5%;
     }
     .invitados .contenedorfotos img{
         width: 100%;
     }
     .temas{
         height: 100%;
+    }
+    .temas h2{
+        font-size: 36px;
+        font-weight: 500;
     }
     .contedortemas{
         justify-content: center;
