@@ -1,14 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;1,500;1,700&display=swap");
-/* * {
-    border: 1px #000 solid;
-} */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
 
 .menuHead{
     padding-top: 15px;
@@ -22,8 +18,6 @@
     margin: 0;
     height: 36px;
 }
-
-
 
 .men{
     font-family: "IBM Plex Sans", monospace;
@@ -52,6 +46,53 @@ a:hover {
     text-decoration: line-through;
 }
 
+.comamonda{
+    display: flex;
+}
+
+
+
+#burger {
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+.nav-mobile-menu {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin: 10px 0 0 0 ;  
+    height: 23%;
+    background: #0000EC;
+    width: 100%;
+    transition: width 0.3s ease-out;
+}
+
+#checkbox:checked ~ .nav-mobile-menu{  
+    visibility: visible;
+}
+.nav-mobile-menu ul{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav-mobile-menu ul li a{
+    color: #ffffff;
+    font-family: "IBM Plex Sans", monospace; 
+    padding-left: 16px;
+}
+.nav-mobile-menu ul li:hover {
+    color: #00f3bb;
+    text-decoration: line-through;
+}
+
+
+
 .punto{
     color: #0000EC;
 }
@@ -64,7 +105,6 @@ a:hover {
 .contentexto {
     display: block;
     position: relative;
-    width: fit-content;
     margin: 0px;
     padding: 0px;
 
@@ -75,9 +115,6 @@ a:hover {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 600;
     font-size: 64px;
-    /* margin: 0px; */
-    /* line-height: 84px; */
-
 }
 
 .rayado {
@@ -121,6 +158,7 @@ a:hover {
 
 }
 
+
 .buttonhead > input:hover {
     background-image: linear-gradient(-120deg, #0000FE, #00F0B8);
     color: #ffffff;
@@ -161,11 +199,18 @@ a:hover {
     height: 620px;
 }
 
-.contenedormusica > img {
+.contenedormusica > iframe {
     top: 15%;
     display: block;
     width: 420px;
+    height: 200px;
     padding-bottom: 30px;
+}
+
+@media screen and (min-width : 1600px) {
+    .contenedormusica > iframe {
+        width: 800px;
+    }
 }
 
 .nosotros {
@@ -323,6 +368,7 @@ a:hover {
     font-family: "IBM Plex Sans", sans-serif;
     color: #060A24;
     font-size: 16px;
+    text-align: center;
 }
 
 .iconspie i{
@@ -338,5 +384,115 @@ a:hover {
     height: 28px;
     visibility: visible;
 
+}
+
+@media screen and (max-width: 650px){
+    .logo{
+        width: 24px;
+    }
+    .texthead{
+        margin-top: 20px;
+        margin-left: 2%;
+    }
+    .texthead .contentexto h1{
+        font-size: 36px;
+        font-weight: 400;
+    }  
+    .texthead p{
+        font-size: 16px;
+        width: 100%;
+    }
+    .buttonhead > input{
+        width: 100%;
+        margin-right: 2%;
+    }
+    #episodio {
+        margin-top: 20px;
+    }
+    #episodios{
+        font-size: 36px;
+        font-weight: 400;
+    }
+    .boxmusica, .fondo, .contenedormusica{
+        height: 1000px;
+    }
+    .contenedormusica iframe{
+        width: 296px;
+        height: 200px;
+    }
+    .nosotros{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros > img{
+        width: 80%;
+    }
+    .venimos{
+        width: 85%;
+    }
+    .nosotros .venimos h2 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .nosotros .venimos p {
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+    }
+    .invitados h2{
+        font-size: 36px;
+        margin: 7.5%;
+    }
+    .invitados .contenedorfotos img{
+        width: 100%;
+    }
+    .temas{
+        height: 100%;
+    }
+    .temas h2{
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .contedortemas{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;     
+        height: 100%;
+    }
+    .contedortemas .icontopic{
+        padding-bottom: 200px;
+    }
+    .ultima-novedades{
+        margin-top: 150px;
+    }
+    .contenidoultimo h2{
+        font-size: 36px;
+        text-align: center;
+        padding-top: 60px;
+        font-weight: 400;
+        width: 90%;
+    }
+    .contenidoultimo .buttomfin{
+        width: 90%;
+    }
+    .piepagina{
+        flex-direction: column;
+        align-items: center;
+    }
+    .iconspie{
+        padding-top: 10px;
+    }
+    .iconspie .fa-telegram{
+        margin: 0;
+    }
+    .comamonda{
+        display: none;
+    }
+    #burger {
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+    }
 }
 
