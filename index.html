@@ -1,58 +1,75 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>PosdcastChannel</title>
 </head>
+
 <body>
-    <div class="head">
-       <div class="menuHead">
-            <div class="logo">
-                <img class="logo" src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/logo.svg" alt="">
+
+    <div id="header">
+        <img id="logo" src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/logo.svg" alt="">
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="#episodio">EPISODIOS</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#entrevista">ENTREVISTAS</a></li>
+                <li><a href="#topicos">TÓPICOS</a></li>
+            </ul>
+        </nav>
+        <input type="checkbox" id="hamburger" class="checkbox" />
+        <label for="hamburger" class="btn-label">
+            <div class="menu-open">
+                <span class="top-line"></span>
+                <span class="middle-line"></span>
+                <span class="bottom-line"></span>
             </div>
-    
-            <ul class="comamonda">
-                <li class="men"><a href="#episodio">EPISODIOS</a></li>
-                <li class="men"><a href="#nosotros">NOSOTROS</a></li>
-                <li class="men"><a href="#entrevista">ENTREVISTAS</a></li>
-                <li class="men"><a href="#topicos">TÓPICOS</a></li>
-            </ul>  
-            <input type="checkbox" name="" id="burgerbott">         
-            <label for="burgerbott">
-                <i class="fa fa-bars"></i>
-                <i class="fa fa-times"></i>
-            </label>
-            <ul class="comamondaburger">
+            <div class="menu-close">
+                <span class="top-line"></span>
+                <span class="middle-line"></span>
+                <span class="bottom-line"></span>
+            </div>
+        </label>
+        <ul class="menu-mobile-open">
             <li><a href="#episodio">EPISODIOS</a></li>
             <li><a href="#nosotros">NOSOTROS</a></li>
             <li><a href="#entrevista">ENTREVISTAS</a></li>
             <li><a href="#topicos">TÓPICOS</a></li>
-            </ul>
-       </div>
-       
+        </ul>
+        <!-- <ul class="menu-mobile-close">
+            <li><a href="#episodio">EPISODIOS</a></li>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#entrevista">ENTREVISTAS</a></li>
+            <li><a href="#topicos">TÓPICOS</a></li>
+        </ul> -->
+    </div>
 
-       </div>
 
-       <div class="texthead">
-           <div class="contentexto">
-                <h1>Hello <span class="rayado">world</span> pale blue dot<span class="punto">.</span></h1>
-           </div>
-           <div class="contenedorp">
-                <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
-           </div>
 
-           <div class="buttonhead">
-               <input onclick="location.href='#nosotros'" type="button" value="CONOCÉ MÁS" >
-           </div>
-       </div>  
+
+    <div class="texthead">
+        <div class="contentexto">
+            <h1>Hello <span class="rayado">world</span> pale blue dot<span class="punto">.</span></h1>
+        </div>
+        <div class="contenedorp">
+            <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos
+                los jueves cada 15 días.</p>
+        </div>
+
+        <div class="buttonhead">
+            <input onclick="location.href='#nosotros'" type="button" value="CONOCÉ MÁS">
+        </div>
+    </div>
     </div>
     <section id="episodio">
         <div class="boxmusica">
             <div class="fondo"></div>
-            <div><p id="episodios">Episodios</p></div>
+            <div>
+                <p id="episodios">Episodios</p>
+            </div>
             <div class="contenedormusica">
                 <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
                     frameborder="0"></iframe>
@@ -61,27 +78,33 @@
                 <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
                     frameborder="0"></iframe>
                 <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
-                    frameborder="0"></iframe>    
+                    frameborder="0"></iframe>
             </div>
         </div>
     </section>
     <section class="nosotros" id="nosotros">
-        <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/phone.png" alt="./PodcastChannel/landingUI_desktop_mobile_kit/assets/phone.png">
+        <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/phone.png"
+            alt="./PodcastChannel/landingUI_desktop_mobile_kit/assets/phone.png">
         <div class="venimos">
             <h2>De dónde venimos</h2>
-            <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
-            <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
+                Universe, are challenged by this point of pale light.</p>
+            <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness,
+                there is no hint that help will come from elsewhere to save us from ourselves.</p>
         </div>
     </section>
-    <section class="invitados" id="entrevista" >
+    <section class="invitados" id="entrevista">
         <h2>Invitadas/os estelares</h2>
-        <div  class="contenedorfotos">
+        <div class="contenedorfotos">
             <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/grace-hopper.png" alt="grace-hopper">
             <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/Katie-Bouman.png" alt="Katie-Bouman">
-            <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/Margaret_Hamilton.png" alt="Margaret_Hamilton">
-            <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
-            <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
-            <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/susan-kare.png" alt="susan-kare">    
+            <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/Margaret_Hamilton.png"
+                alt="Margaret_Hamilton">
+            <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/An E.R.A.Univac 1103 computer in the 1950s.png"
+                alt="An E.R.A.Univac 1103 computer in the 1950s">
+            <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+                alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
+            <img src="./PodcastChannel/landingUI_desktop_mobile_kit/assets/susan-kare.png" alt="susan-kare">
         </div>
     </section>
     <section class="temas" id="topicos">
@@ -125,4 +148,5 @@
         </div>
     </section>
 </body>
+
 </html>
